@@ -1,0 +1,9 @@
+#=======================================================================
+# Makefrag for rv64ui tests
+#-----------------------------------------------------------------------
+
+rv64v_sc_tests = \
+	basic \
+
+rv64ui_p_tests = $(addprefix rv64v-p-, $(rv64v_sc_tests))
+rv64ui_v_tests = $(addprefix rv64v-v-, $(rv64v_sc_tests))
